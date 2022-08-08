@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
@@ -94,9 +93,10 @@ class _HomeViewState extends State<HomeView> {
                 _euro = snapshot.data['results']['currencies']['EUR']['buy'];
 
                 return SingleChildScrollView(
-                  padding: EdgeInsets.all(10.0),
+                  padding: EdgeInsets.fromLTRB(15.0, 30.0, 15.0, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
                         Icons.monetization_on,
@@ -141,9 +141,7 @@ TextField _textFieldBuilder({String label, String prefix, TextEditingController 
 
 Future<Map<String, dynamic>> getData() async {
   try {
-    Response response = await Dio().get(request);
-    print(response.statusCode);
-    print(response);
+    final response = await Dio().get(request);
     return response.data;
   } catch (e) {
     print(e);
