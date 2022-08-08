@@ -4,6 +4,7 @@ import 'views/home.view.dart';
 
 void main() async {
   runApp(MaterialApp(
+    title: 'Coin Base',
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
       hintColor: Colors.amber,
