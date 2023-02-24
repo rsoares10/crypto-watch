@@ -4,7 +4,7 @@ import 'views/home.view.dart';
 
 void main() async {
   runApp(MaterialApp(
-    title: 'Coin Base',
+    title: 'Crypto Watch',
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
       hintColor: Colors.amber,

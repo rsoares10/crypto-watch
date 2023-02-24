@@ -58,7 +58,7 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Coin Base'),
+        title: Text('Crypto Watch'),
         backgroundColor: Colors.amber,
         centerTitle: true,
       ),
